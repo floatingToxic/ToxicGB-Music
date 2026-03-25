@@ -10,6 +10,7 @@ import UserAvatar from '../common/UserAvatar.vue'
       <AppLogo size="medium" />
       <div class="search-wrapper">
         <SearchBar placeholder="搜索音乐、歌手、专辑..." />
+
       </div>
       <UserAvatar src="https://api.dicebear.com/7.x/avataaars/svg?seed=default" alt="用户头像" size="small" />
     </div>

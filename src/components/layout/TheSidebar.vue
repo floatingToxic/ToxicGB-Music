@@ -24,12 +24,6 @@ const menuItems: MenuItem[] = [
     route: '/search'
   },
   {
-    id: 'player',
-    label: '播放器',
-    icon: '🎵',
-    route: '/player'
-  },
-  {
     id: 'playlists',
     label: '歌单',
     icon: '📋',
@@ -39,30 +33,8 @@ const menuItems: MenuItem[] = [
         label: '我的歌单',
         route: '/playlists/my'
       },
-      {
-        id: 'recommended',
-        label: '推荐歌单',
-        route: '/playlists/recommended'
-      }
     ]
   },
-  {
-    id: 'artists',
-    label: '歌手',
-    icon: '🎤',
-    children: [
-      {
-        id: 'all-artists',
-        label: '全部歌手',
-        route: '/artists'
-      },
-      {
-        id: 'favorite-artists',
-        label: '收藏的歌手',
-        route: '/artists/favorite'
-      }
-    ]
-  }
 ]
 </script>
 

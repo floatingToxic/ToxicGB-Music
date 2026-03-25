@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Button } from '@/components/ui/button';
+
 </script>
 
 <template>
@@ -16,6 +18,7 @@
       <div class="card">
         <h2>热门歌手</h2>
         <p>关注你的偶像</p>
+        <Button>点我</Button>
       </div>
     </div>
   </div>
