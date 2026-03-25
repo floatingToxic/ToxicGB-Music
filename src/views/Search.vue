@@ -52,7 +52,9 @@
 }
 
 .search-results {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  /* 白色，80% 不透明度 */
+
   border-radius: 8px;
   padding: 40px;
   text-align: center;

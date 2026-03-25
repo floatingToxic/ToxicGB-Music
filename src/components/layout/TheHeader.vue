@@ -27,7 +27,7 @@ import UserAvatar from '../common/UserAvatar.vue'
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   height: 60px;
 }
