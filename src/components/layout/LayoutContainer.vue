@@ -4,6 +4,7 @@ import TheSidebar from './TheSidebar.vue'
 import TheFooter from './TheFooter.vue'
 import { BackgroundRender } from '@applemusic-like-lyrics/vue';
 import { ref } from 'vue';
+import { MeshGradientRenderer } from '@applemusic-like-lyrics/core';
 //随机图片
 const randomImage = Math.floor(Math.random() * 3) + 1;
 const imageUrl = ref(`https://picsum.photos/1920/1080?random=${randomImage}`);
@@ -13,7 +14,7 @@ const imageUrl = ref(`https://picsum.photos/1920/1080?random=${randomImage}`);
 <template>
   <div class="layout-container">
     <div class="full-page-background">
-      <BackgroundRender :album="imageUrl" />
+      <BackgroundRender :renderer="MeshGradientRenderer" :fps="90" :render-scale="1" :album="imageUrl" />
     </div>
     <TheHeader class="header" />
     <TheSidebar class="sidebar" />
@@ -45,7 +46,6 @@ const imageUrl = ref(`https://picsum.photos/1920/1080?random=${randomImage}`);
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(192, 57, 43, 0.05) 100%);
   pointer-events: none;
   z-index: 1;
 }

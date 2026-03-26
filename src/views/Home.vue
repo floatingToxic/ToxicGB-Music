@@ -118,13 +118,11 @@ onUnmounted(() => {
 
 <template>
   <div class="home">
-    <h1 class="text-white drop-shadow-md opacity-90">欢迎来到 ToxicGB Music</h1>
-
     <!-- 新的布局：左侧用户信息，右侧轮播图 -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
       <!-- 左侧：用户卡片 -->
       <div class="lg:col-span-1">
-        <Card class="h-full p-5! bg-white/60 backdrop-blur-md opacity-90">
+        <Card class="h-full p-5! bg-white/40 glass-effect">
           <CardHeader class="items-center text-center pb-6">
             <div class="relative mb-4">
               <div
